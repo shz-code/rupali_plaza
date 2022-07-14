@@ -80,7 +80,7 @@ footer {
 .card-i-txt {
   height: 10rem;
   width: 10rem;
-  margin: 0 2%;
+  margin: 2%;
   background: var(--secondary-bg);
   border: 2px solid var(--primary-color);
   -o-border-image: linear-gradient(var(--primary-color), var(--secondary-color), var(--primary-color));
