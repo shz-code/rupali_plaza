@@ -10,7 +10,9 @@
   <!-- Added Libraries -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Added Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/utilities.css">
@@ -47,84 +49,74 @@
             </li>
             <!-- Dropdown Navigation Start   -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="products" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="products" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Products
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li> <span class="txt"> Brands </span></li>
-                <li><hr class="dropdown-divider"></li>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                <a class="dropdown-item" href="#">Brands</a>
+                <div class="dropdown-divider"></div>
                 <!-- Multilevel Dropdown Start  -->
-                <li>
-                  <a class="dropdown-item dropdown-toggle" href="#">
-                    Rupali 
-                  </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                <div class="dropdown dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Rupali</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
                     <!-- Multi multilevel Dropdown Start  -->
-                    <li>
-                      <a class="dropdown-item dropdown-toggle" href="#">TV</a>
-                      <ul class="dropdown-menu dropdown-submenu">
-                        <li>
-                          <a class="dropdown-item" href="#">Model X</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Model Y</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- Multi multilevel Dropdown End  -->
-                    <li>
+                    <div class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">TV</a>
+                      <!-- Multi multi multilevel Dropdown Start  -->
+                      <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                        <a class="dropdown-item" href="#">Model X</a>
+                        <a class="dropdown-item" href="#">Model Y</a>
+                      </div>
+                      <!-- Multi multi multilevel Dropdown End  -->
                       <a class="dropdown-item" href="#">Mobile</a>
-                    </li>
-                  </ul>
-                </li>
+                    </div>
+                    <!-- Multi multilevel Dropdown End  -->
+                  </div>
+                </div>
                 <!-- Multilevel Dropdown End  -->
                 <!-- Multilevel Dropdown Start  -->
-                <li>
-                  <a class="dropdown-item dropdown-toggle" href="#">
-                    SAMSUNG 
-                  </a>
-                  <ul class="dropdown-menu dropdown-submenu">
-                    <!-- Multi multilevel Dropdown Start  -->
-                    <li>
-                      <a class="dropdown-item dropdown-toggle" href="#">TV</a>
-                      <ul class="dropdown-menu dropdown-submenu">
-                        <li>
-                          <a class="dropdown-item" href="#">Model Z</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Model A</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- Multi multilevel Dropdown End  -->
-                    <!-- Multi multilevel Dropdown Start  -->
-                    <li>
-                      <a class="dropdown-item dropdown-toggle" href="#">Mobile</a>
-                      <ul class="dropdown-menu dropdown-submenu">
-                        <!-- Multi multi multilevel Dropdown Start  -->
-                        <li>
-                          <a class="dropdown-item dropdown-toggle" href="#">A series</a>
-                          <ul class="dropdown-menu dropdown-submenu">
-                            <li>
-                              <a class="dropdown-item" href="#">A3</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#">A71</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <!-- Multi multi multilevel Dropdown Start  -->
-                        <li>
-                          <a class="dropdown-item" href="#">Note Series</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- Multi multilevel Dropdown End  -->
-                  </ul>
-                </li>
-                <!-- Multilevel Dropdown Start  -->
-              </ul>
+                <div class="dropdown dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">SAMSUNG</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                    <div class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">TV</a>
+                      <!-- Multi multilevel Dropdown Start  -->
+                      <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                        <a class="dropdown-item" href="#">Model Z</a>
+                        <a class="dropdown-item" href="#">Model A</a>
+                      </div>
+                      <!-- Multi multilevel Dropdown End  -->
+                    </div>
+                    <div class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Mobile</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                        <!-- Multi multilevel Dropdown Start  -->
+                        <div class="dropdown dropend">
+                          <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A Series</a>
+                          <!-- Multi multi multilevel Dropdown Start  -->
+                          <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                            <a class="dropdown-item" href="#">A3</a>
+                            <a class="dropdown-item" href="#">A71</a>
+                          </div>
+                          <!-- Multi multi multilevel Dropdown End  -->
+                        </div>
+                        <!-- Multi multilevel Dropdown Start  -->
+
+                        <a class="dropdown-item" href="#">Note Series</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Multilevel Dropdown End  -->
+              </div>
             </li>
             <!-- Dropdown Navigation End   -->
           </ul>
@@ -180,6 +172,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
 </body>
 
 </html>
