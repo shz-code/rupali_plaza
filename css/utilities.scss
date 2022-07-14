@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #3ab4f2;
+  --secondary-color: #0078aa;
+  --primary-text: black;
+  --secondary-text: white;
+  --primary-bg: #f0f1f1;
+  --secondary-bg: #f8f9fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--secondary-color);
+}
+h1 {
+  text-align: center;
+  margin: 2% 0;
+}
+// Over written bootstrap
+.bg-light {
+  background-color: var(--secondary-bg) !important;
+}
+// Over written bootstrap --> Navbar
+.navbar-nav {
+  margin: auto;
+}
+.navbar > .container-fluid {
+  justify-content: center;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.dropdown-menu li {
+    position: relative;
+    .txt{
+      padding: 0.25rem 1rem;
+      cursor: pointer;
+    }
+  }
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+  @media (max-width: 991px) {
+      .dropdown-menu .dropdown-submenu {
+          display: none;
+          position: absolute;
+          right: 0%;
+          top: 30px;
+          left: 0;
+        }
+        .dropdown-menu .dropdown-submenu-left {
+          right: 0%;
+          left: 100%;
+        }
+  }
+// Over written bootstrap --> Navbar
+// Over written bootstrap
+.sticky-container {
+  // Sticky Container
+  position: sticky;
+  top: 0;
+}
+// Header
+header {
+  background: white;
+//   background: var(--primary-bg);
+  display: flex;
+  justify-content: center;
+  .logo-box {
+    max-width: 150px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+  }
+}
+// Header End
+// Breadcrumb Start
+.breadcrumb-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+}
+// Breadcrumb End
+
+// Main content body for base.html
+.main-content-body-container {
+  width: 80%;
+  margin: auto;
+}
+
+footer {
+  //Footer
+  width: 80%;
+  margin: auto;
+}
+// Card Design
+.card-i-txt {
+  height: 10rem;
+  width: 10rem;
+  margin: 0 2%;
+  background: var(--secondary-bg);
+  border: 2px solid var(--primary-color);
+  border-image: linear-gradient(
+    var(--primary-color),
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  border-image-slice: 1;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.13);
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    i {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      transition: 0.3s ease;
+    }
+    &:hover {
+      p {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

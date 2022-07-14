@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Added Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Added Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
+
+</head>
+
+<body>
+  <!-- Header logo part start -->
+  <header>
+    <div class="logo-box">
+      <img src="https://www.logodesign.net/logo/sea-waves-with-penguins-6075ld.png" alt="Logo">
+      <!-- <img src="logo.png" alt="logo"> -->
+    </div>
+  </header>
+  <!-- Header logo part end  -->
+
+  <div class="sticky-container">
+    <!--  Sticky Container -->
+
+    <!-- Main navigation start  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="home" aria-current="page" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="agents" href="#">Agents</a>
+            </li>
+            <!-- Dropdown Navigation Start   -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="products" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li> <span class="txt"> Brands </span></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- Multilevel Dropdown Start  -->
+                <li>
+                  <a class="dropdown-item dropdown-toggle" href="#">
+                    Rupali 
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <!-- Multi multilevel Dropdown Start  -->
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#">TV</a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">Model X</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Model Y</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Multi multilevel Dropdown End  -->
+                    <li>
+                      <a class="dropdown-item" href="#">Mobile</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Multilevel Dropdown End  -->
+                <!-- Multilevel Dropdown Start  -->
+                <li>
+                  <a class="dropdown-item dropdown-toggle" href="#">
+                    SAMSUNG 
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <!-- Multi multilevel Dropdown Start  -->
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#">TV</a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">Model Z</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Model A</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Multi multilevel Dropdown End  -->
+                    <!-- Multi multilevel Dropdown Start  -->
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#">Mobile</a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <!-- Multi multi multilevel Dropdown Start  -->
+                        <li>
+                          <a class="dropdown-item dropdown-toggle" href="#">A series</a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">A3</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">A71</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- Multi multi multilevel Dropdown Start  -->
+                        <li>
+                          <a class="dropdown-item" href="#">Note Series</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Multi multilevel Dropdown End  -->
+                  </ul>
+                </li>
+                <!-- Multilevel Dropdown Start  -->
+              </ul>
+            </li>
+            <!-- Dropdown Navigation End   -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main navigation End  -->
+
+    <!-- Breadcrumb Start  -->
+    <div class="breadcrumb-container">
+      <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <!-- <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+          <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+        </ol>
+      </nav>
+    </div>
+    <hr>
+    <!-- Breadcrumb End  -->
+
+    <!-- Main content container for width start -->
+    <div class="main-content-body-container">
+      <!-- Content body for indivisual pages start -->
+      <div class="main-content-body">
+        <h1>Dashboard</h1>
+        <div class="dashboard">
+          <div class="card-i-txt">
+            <a href="login.html">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              <p>Login</p>
+            </a>
+          </div>
+          <div class="card-i-txt">
+            <a href="signup.html">
+              <i class="fa-solid fa-user-plus"></i>
+              <p>Signup</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Content body for indivisual pages end -->
+    </div>
+    <!-- Main content container for width end -->
+
+    <!-- Footer Start  -->
+    <footer>
+      <p>Designed and built for <a href="">Rupali Plaza</a>, by <a href="">@shz</a>.</p>
+    </footer>
+    <!-- Footer End  -->
+  </div>
+  <!-- Added Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
