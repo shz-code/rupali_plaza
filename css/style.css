@@ -1,8 +1,8 @@
 :root {
   --primary-color: blue;
-  --secondary-color:red;
-  --primary-text:black;
-  --secondary-text:white;
+  --secondary-color: red;
+  --primary-text: black;
+  --secondary-text: white;
   --primary-bg: #f0f1f1;
   --secondary-bg: #f8f9fa;
 }
@@ -11,7 +11,8 @@ body {
   height: 100vh;
 }
 
-.main-content-body .form-signin, .main-content-body .signup-form {
+.main-content-body .form-signin,
+.main-content-body .signup-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +31,8 @@ body {
 }
 .main-content-body form .form-floating {
   margin: 2% 0;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .main-content-body form .form-signin input[type=email] {
   margin-bottom: 10px;
@@ -51,9 +54,13 @@ body {
 .main-content-body .signup-form form .form-floating .row .col:nth-child(2) {
   margin-left: 2%;
 }
-
-.dashboard {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.main-content-body .prooducts-filter form {
+  max-width: 100%;
+  width: 100%;
+}
+.main-content-body .prooducts-filter form .form-select,
+.main-content-body .prooducts-filter form .input-group {
+  max-width: 250px;
+  width: 100%;
+  margin: 1%;
 }/*# sourceMappingURL=style.css.map */

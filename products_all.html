@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Added Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Added Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+
+</head>
+
+<body>
+    <!-- Header logo part start -->
+    <header>
+        <div class="logo-box">
+            <img src="https://www.logodesign.net/logo/sea-waves-with-penguins-6075ld.png" alt="Logo">
+            <!-- <img src="logo.png" alt="logo"> -->
+        </div>
+    </header>
+    <!-- Header logo part end  -->
+
+    <div class="sticky-container">
+        <!--  Sticky Container -->
+
+        <!-- Main navigation start  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="home" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="agents" href="#">Agents</a>
+                        </li>
+                        <!-- Dropdown Navigation Start   -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="products" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                <a class="dropdown-item" href="#">Brands</a>
+                                <div class="dropdown-divider"></div>
+                                <!-- Multilevel Dropdown Start  -->
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rupali</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <!-- Multi multilevel Dropdown Start  -->
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">TV</a>
+                                            <!-- Multi multi multilevel Dropdown Start  -->
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Model X</a>
+                                                <a class="dropdown-item" href="#">Model Y</a>
+                                            </div>
+                                            <!-- Multi multi multilevel Dropdown End  -->
+                                            <a class="dropdown-item" href="#">Mobile</a>
+                                        </div>
+                                        <!-- Multi multilevel Dropdown End  -->
+                                    </div>
+                                </div>
+                                <!-- Multilevel Dropdown End  -->
+                                <!-- Multilevel Dropdown Start  -->
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SAMSUNG</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">TV</a>
+                                            <!-- Multi multilevel Dropdown Start  -->
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Model Z</a>
+                                                <a class="dropdown-item" href="#">Model A</a>
+                                            </div>
+                                            <!-- Multi multilevel Dropdown End  -->
+                                        </div>
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Mobile</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <!-- Multi multilevel Dropdown Start  -->
+                                                <div class="dropdown dropend">
+                                                    <a class="dropdown-item dropdown-toggle" href="#"
+                                                        id="dropdown-layouts" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">A Series</a>
+                                                    <!-- Multi multi multilevel Dropdown Start  -->
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                        <a class="dropdown-item" href="#">A3</a>
+                                                        <a class="dropdown-item" href="#">A71</a>
+                                                    </div>
+                                                    <!-- Multi multi multilevel Dropdown End  -->
+                                                </div>
+                                                <!-- Multi multilevel Dropdown Start  -->
+
+                                                <a class="dropdown-item" href="#">Note Series</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Multilevel Dropdown End  -->
+                            </div>
+                        </li>
+                        <!-- Dropdown Navigation End   -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main navigation End  -->
+
+        <!-- Breadcrumb Start  -->
+        <div class="breadcrumb-container">
+            <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                    <!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+        <hr>
+        <!-- Breadcrumb End  -->
+
+        <!-- Main content container for width start -->
+        <div class="main-content-body-container">
+            <!-- Content body for indivisual pages start -->
+            <div class="main-content-body">
+                <h1>All Products</h1>
+                <div class="prooducts-filter">
+                    <form class="flex-jus-center" autocomplete="off" action="">
+                        <select class="form-select" name="company" aria-label="Select">
+                            <option selected disabled>Select Company</option>
+                            <option value="1">Samsung</option>
+                            <option value="2">Rupali</option>
+                        </select>
+                        <select class="form-select" name="product_type" aria-label="Select">
+                            <option selected disabled>Select Product-type</option>
+                            <option value="1">TV</option>
+                            <option value="2">Mobile</option>
+                        </select>
+                        <div class="input-group">
+                            <input list="serial-models" placeholder="Search Serial/Model Number" class="form-control" name="serial-model" id="serial-model">
+                            <datalist id="serial-models">
+                                <option value="Edge">
+                                <option value="Edge">
+                                <option value="Edge">
+                                <option value="Edge">
+                            </datalist>
+                        </div>
+                    </form>
+                </div>
+                <!-- Variation 1 start  -->                 
+                <div class="products_all">
+                    <!-- Stock Products start -->
+                    <div class="stock">
+                        <h5>In Stock</h5>
+                        <div class="flex-jus-center">
+                            <div class="card-product">
+                                <div class="card-product-img">
+                                    <div class="img-box">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhMTExIVFhMWGBYTGBYXEhUTGxcWFxkXGhUXFxcYHSghGRolGxUXITEhJSorMS4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0mICMrLS0tMy0rMi0tLS81Ly0tLS0tLTctLS0tLS8tLi0vLS0tNS0tKy0tLS0tNy0tLi0tLf/AABEIAKMBNgMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABAUDBgEHCAL/xABIEAACAQIDBQQFCAULBAMAAAAAAQIDEQQhMQUSQVFhBhNxgSKRodHwBzJCUpPB0uEUI0NTsRUkM2Nyc3SClLLDRISjwhclNP/EABoBAQACAwEAAAAAAAAAAAAAAAADBAECBQb/xAArEQEAAgIABAUDBAMAAAAAAAAAAQIDEQQSMaETIUFR0QUycRQiUmEVgZH/2gAMAwEAAhEDEQA/AO8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdS9ovlDxdDE16UO7ahOUY3jwTaWfkV2G+VLGz4U072a3L25FH22p/z3EyT0qzv09J5+BQwlne2a1XNHOy58kWmIl2MHCYrUrNo9PeXZK+UDHON1Km+nd/mYcP8o+NlJxbpp2uv1d78+JqOAxFpLk/an8X8UznH0d2SlHxXu+OZU/WZ4nU27R8Ln6Dh9b5e8/Le6PbbGyV1UpdV3OnJ/OzX5nxie2+Pje0qTazX6q11wd9748zVcNidJrTiuj1X3+ZYzp3sln9KPVcV8dCOeOz/wAu0fDP+P4f+PeflcbN7c46snapSjKLs4uje3W+/mjmv212hGW7v0vsOl39PqarH9RVVSN3Tkm3wtd/cy0rWlKMk+vlxfqRi/HZ484t2j4K/T+H9a95+U+r29x6X9JSvdpruLWs2vrkd/KJtD61H7F/iImBisRFQ3W5xlOzjruyzSfm279SVtDsrOMIzp3krNyy3d23O57PgacNkwUtkjzmPf1eM4+2fFnyVx9InsL5RdofWo/Yv8YXyh7R+tR+xf4zFhcBRcdx7yqNppXTTyyV1pyIWLwSjOSipbvDeSvby65XRdjheGmdcveflQni88Rvm7R8LT/5A2l9ej9g/wAZkp9u9pS0qUb6JLDNv/eUXcFzsylTlOmu7u8opXSV+Db1ZrfhMFY3y95+WacbmtOubtHwkrtntSycp0YxeV/0V+eXeI2DD43aM4Rn+n4dbyUrPZ8sr/8AcIlVdhQqRjCatBNytHK7fN8CPtXAdzC8XeKVktLclfl1OZlnBy7rGnUxRm5tTO1LtPtPtOlU7tYmhKTSabwTppp2zv37ytx6PlcwS7Y7S3pQhiaEqi3bQWBleW9fd/b5aJ8bLwOKNNzm6zzvdLLJxjZLPinbhre3FlvsPZUYKVVxSlLWTSTUVq21z4+pcW+JXPltPXs7dsGGsR5d5WXZHa+NnipUMVUpTXcKsu7ounuy391q7nLeXXI3M0fs209pzaX/AEmr1f67Vrh4G8F7HMzWJlz8kRFpiAAG7QAAAAAAAAAAAAAAAAAAAAAAAB557XYhLH4lNftalnzvJ3TKWrS3fSjpp4dCf23hfaGK/vZ+fpPTqRsPO6s9f4/mcnPH75ei4TzxV/DFQlw8148vvXgWmHnvwtxWa+9e32oqqtG2a0RKwtaz3l5rr+fvKmSu48lus6TdnNKTjwea9xbYRuzj9KDuvD4y9RSY+FrVI6P0l96LBYm6hVTvwl4fGfkVLxPWEkeyZVjdZq6k210l9Jeaz8UQcHJwluN5O+71Wkl4otEt68b62lF8pcPbb2lbiqKk1e6zbydrPir+KZiLaZT+zVOq3LuYtuNr7qzu7rPlwNgxW0K9OPdyjJNqzbyzvqmtUV3YPaapzrtK79CLzvo55+f3G8Pu8VBqVkl1Sa8D2X03LMcNTnruI35+vWXhvquOLcXkjHfVp15enSHXboZ7ydnfSxnjS3rX4e8vNt7LhRkt2XoyXFr1XIKS3N6K3uWuuiXPyOxfjMUV5pn03/f/AB5/HwfETk5IrPXX9b/PT+3xW2RJw7yMXuq93r524Ens5UhSqb0+VllfMp8TXqNek3FZ2ipJaWu7aLxzZEnimkrSk+Tvo+T4PzRyrfV8cxNLRLvU+hZa2relo36+2/h2tv7y9DXr95r23IzrfqpycIxUpTs7NvSOfBW3vHLqVGB7RzjBRas1k3BZW4NpvX1k6jtH9paVaTadOCWcmrxUnfSK3ms7Z2sU82XFbFPLO96/P+13Diz0zRzV1rfn6e3lKXhsNTpRU52grb1m7bqslFtc7JWXPwuV+J21UrPu6FNxpK29UlkkuaXO2ity0VjJ/JE6096vPead7L5lOXGMF+0qLRzeUbZK6ymyUYZRSy01tG/N/Sk+epS6Qv7iZ93PZeNtpS1//ItX/W+w3s0Pss//ALKf+E/5uXA3wu4vshQzffIACRGAAAAAAAAAAAAAAAAAAAAAAAA869sM8dik/wB7U/3Mp6ydut/X+ZZ9scRH+UMVFuz76bT/AMz4+8qqry+Pi5y80fvl6LhZicVfw+6Va90+Pxc5knHPnr4GCE/X8e3qS4SurP4+ORDpZhMwdZNOD45x+OowNS0pUnpL5vRkCPou3q6Pl0JU573pL5y18SC+PqkiVzhK7cF9aDs/LT2GTaE9JL+155J/cVtCvaal9GqrPpNaff6ybCtnGNr3Ulbplp10KdqzDaJZ9m4qWHnJ7kXGUVG7ejvdSy4cPMvntOfCCXnfXQocXVvu6aON/ua9WXQmbL0aUZSmlaMU8kuLvdJeLzOt9P4vLSnh7/Dk8fwGDJfxrV3Pql7XlOrKNNQvNLNcE+XV5LL8yLi6zoU4+leV/ScWox3le0VzUW82sr3WdnaVKnFStvq9ry3N2W7fLd3t2Kz5y10zyaq9rYqk1ayutGo7z5Wd37UveWMszadz1RYKxWOWvSEVYh5tavW18/ARqpK8k755NNLPy+OZDr41PKCnyzhNK4UKitbNuy3e6bvnonu3voVskRXqu4/Postm4eVepGEE8243TzSyu2nw9fTOx2PgsFCnFKKy+tfN8MpcrZX5ZR4sg9lthxwtG8lFVJ5zaSWv0Vbhz5+GthWr3005+73ktKRSFHNknLbUdHzVqZWXBWyW7l/6x+OpEaXH48FwPqdTlpz6/eyLVrW4+/8AITJWiT2Zlfacv8J/zG9HX/ZCd9pT/wAJ/wAx2AX8P2Q5+eNZJgABIiAAAAAAAAAAAAAAAAAAAAAAAAeZ+3dLex+L/vqnj85+s1+nWnDLVfw/Lp/A2rtfTvjsX/f1f9zKZ4b4ZRyTHNO3cwVnw6zHsh0q6ejJlCfM+Hs5PxM9Kk0rNXXqfuZHMQs15o6sys+PxyZkp1HF/GaMapPh/CzPq70km17TSabSxLI56rg810ktP4EuFXOM+FnfK7W8o524q6s/EhQnHNN5fHtEa6StvLLiQWw+bbmhY9+m7p36rP2mXD4m+WdmrNXauuKfQp3Vja6kn1VrmbDYiyupP1OSfibeFNY8kc2radTLaaL3l6OUertFc7t3b8iJi6OfpVLdEksvLTx9pB2fj5NypwWb9L0lJJc7Sy6cuOphq4eo772fqa9S18SavNMbsqzWsW1WUyjWpp6r+L9ZtHZ7D021iZ23Vfu1a12snN9FouvlfR8Hs2pVmo/Nu7XlaKXVI7QwOzYxtmrRtFJO9rKy8Le/jcxGOb23PoZb1pTlieqW6zlm/V7/AHevpHrVb+4lYiUYLx8yPKpTSu5epOT9hJNZVq2r6IVeo/Aw08NOWaVlxby9ryRlqbSpReVOcnzcbeyVsvWYXthvOSjHle9V+S9GMfUzTXul559ITex9NR2lOzv/ADRXdnb+m4N6nYJ152Lxfe7Sm7t2wiWe7++5RSSOwzoYvshys8zOSdgAJEQAAAAAAAAAAAAAAAAAAAAAAADzT2y2hKG0MZFJNd/Uef8AafmV8MdUlpT+PMs+1s0sfjMlfv6uf+ZlTLFkVsUTO9L2PiLVrEbZG6r5LwsN2fGpYizxvBCNfnr7EYjFHs2/U2n1TIw51Jetr7zlpPm/F39bIiqXPrfvktDPIx48plLcV8sjJSqZXsuPkkQG+uSz8+BlhJLcWvNWyeV8+l8/I0tSWYzJPft5L8jNhqr0vbw18E+BDqVeNn7DJh7N2vbq7u3Ux4e4Y8bS5wqi095LPRPK3XxI9bDNaPy+NPac2eWSs1k4+lFr25EDEVJLRS8nc3jDqNI/H3O2bupXyy/zG57Lx05wUtWrKUb2z5+D/LTTQYYxrVPxaXvJ2G2u6clUj4NXWceK1MeHNZ228XmhvGOoqslacqb5xsn4X1XgUOO2TUUX/OMTUdrJd5ZLxvIsqOMjUip03k/izMc8R5M25GsZWoy2Ri1o5Wf9c/ejipsnFSye9PK39LZeDbefgbPUqkSpVaHJLPirf5FtnzoY7ERnHdbw6drt/tFzO5jqn5Larlj613e2GS/8p2sSR0Vbzu2wAGWoAAAAAAAAAAAAAAAAAAAAAAADzL22oVf5QxlqdRrv6juqc2n6XNLMonhaz/ZVPsp+49bgzs28jxw87tKnUbVrpQldX0urXVzJHDVP3VT7OfuPR+wdjxeJq49Tnv1XUg4qXoSpxcI021zj3Ts1+8fS2yjbO3k7uKn7up9lP3HKo1P3dX7KfuPWAGzcvJ6o1Ml3VS17v9VPy4H3uVLr9XV+yny8D1aDBuXlSpvWXoVPsp5ewy4Wc4K/d1M73XdTd/Zkz1MBHkTO3mH9Id/mVbdKNRefzb3PjE15tO1Oo3zdGqm+t1FW/I9Qgzth5UbqPWlV+yn+E+FTl+5qedGp9yPVwGzbzFsjaFSjJ3p1dx6pUamT5r0S3ntqD+hW/wBNW/CehgNjzk9swd0o1W1qlQqtrkmlHIxT2mvqVv8AT1vwndmxtjRweLqNVJy/SlKpJzldupCpKWXBJQqqKXKC6s2YbHT/AMjtRzxteW5NL9HSvKnOGfeJ/SSO4ADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOIRSVkklyWRyAAAAAAAAAAAAAAAAABw4q6dldaPl4HIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z"
+                                            alt="">
+                                    </div>
+                                    <div class="card-product-details">
+                                        <h3>Samsung Evo V</h3>
+                                        <p>Samsung</p>
+                                        <p>Category: <span>TV</span></p>
+                                        <p>Serial <span>01231234254</span></p>
+                                        <p>Model: <span>ESCSDWDSWS</span></p>
+                                        <p>Price: <span>50000 Tk</span></p>
+                                        <p>Quantity: <span>200 pcs</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-product">
+                                <div class="card-product-img">
+                                    <div class="img-box">
+                                        <img src="data:image/jpeg;base64,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"
+                                            alt="">
+                                    </div>
+                                    <div class="card-product-details">
+                                        <h3>Rupani Exo </h3>
+                                        <p>Rupali</p>
+                                        <p>Category: <span>TV</span></p>
+                                        <p>Serial <span>01231234254</span></p>
+                                        <p>Model: <span>ESCSDWDSWS</span></p>
+                                        <p>Price: <span>50000 Tk</span></p>
+                                        <p>Quantity: <span  class="warning">5 pcs</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stock Products end -->
+                    <!-- Out of Stock Products start -->
+                    <div class="out-of-stock">
+                        <h5>Out of Stock</h5>
+                        <div class="flex-jus-center">
+                            <div class="card-product ofs">
+                                <div class="card-product-img">
+                                    <div class="img-box">
+                                        <img src="data:image/jpeg;base64,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"
+                                            alt="">
+                                    </div>
+                                    <div class="card-product-details">
+                                        <h3>Samsung Evo V</h3>
+                                        <p>Samsung</p>
+                                        <p>Category: <span>TV</span></p>
+                                        <p>Serial <span>01231234254</span></p>
+                                        <p>Model: <span>ESCSDWDSWS</span></p>
+                                        <p>Price: <span>50000 Tk</span></p>
+                                        <p>Quantity: <span>0 pcs</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Out of Stock Products end -->
+                </div>
+                <!-- Variation 1 end  -->
+            </div>
+            <!-- Content body for indivisual pages end -->
+        </div>
+        <!-- Main content container for width end -->
+
+        <!-- Footer Start  -->
+        <footer>
+            <p>Designed and built for <a href="">Rupali Plaza</a>, by <a href="">@shz</a>.</p>
+        </footer>
+        <!-- Footer End  -->
+    </div>
+    <!-- Added Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
+</body>
+
+</html>
