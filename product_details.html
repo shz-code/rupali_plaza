@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Added Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Added Stylesheets -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Header logo part start -->
+    <header>
+        <div class="logo-box">
+            <img src="https://www.logodesign.net/logo/sea-waves-with-penguins-6075ld.png" alt="Logo">
+            <!-- <img src="logo.png" alt="logo"> -->
+        </div>
+    </header>
+    <!-- Header logo part end  -->
+
+    <div class="sticky-container">
+        <!--  Sticky Container -->
+
+        <!-- Main navigation start  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="agents" href="#">Agents</a>
+                        </li>
+                        <!-- Dropdown Navigation Start   -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="products" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                <a class="dropdown-item" href="#">Brands</a>
+                                <div class="dropdown-divider"></div>
+                                <!-- Multilevel Dropdown Start  -->
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rupali</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <!-- Multi multilevel Dropdown Start  -->
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">TV</a>
+                                            <!-- Multi multi multilevel Dropdown Start  -->
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Model X</a>
+                                                <a class="dropdown-item" href="#">Model Y</a>
+                                            </div>
+                                            <!-- Multi multi multilevel Dropdown End  -->
+                                            <a class="dropdown-item" href="#">Mobile</a>
+                                        </div>
+                                        <!-- Multi multilevel Dropdown End  -->
+                                    </div>
+                                </div>
+                                <!-- Multilevel Dropdown End  -->
+                                <!-- Multilevel Dropdown Start  -->
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SAMSUNG</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">TV</a>
+                                            <!-- Multi multilevel Dropdown Start  -->
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Model Z</a>
+                                                <a class="dropdown-item" href="#">Model A</a>
+                                            </div>
+                                            <!-- Multi multilevel Dropdown End  -->
+                                        </div>
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Mobile</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <!-- Multi multilevel Dropdown Start  -->
+                                                <div class="dropdown dropend">
+                                                    <a class="dropdown-item dropdown-toggle" href="#"
+                                                        id="dropdown-layouts" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">A Series</a>
+                                                    <!-- Multi multi multilevel Dropdown Start  -->
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                        <a class="dropdown-item" href="#">A3</a>
+                                                        <a class="dropdown-item" href="#">A71</a>
+                                                    </div>
+                                                    <!-- Multi multi multilevel Dropdown End  -->
+                                                </div>
+                                                <!-- Multi multilevel Dropdown Start  -->
+
+                                                <a class="dropdown-item" href="#">Note Series</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Multilevel Dropdown End  -->
+                            </div>
+                        </li>
+                        <!-- Dropdown Navigation End   -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main navigation End  -->
+
+        <!-- Breadcrumb Start  -->
+        <div class="breadcrumb-container">
+            <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="products_all.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Details</li>
+                </ol>
+            </nav>
+        </div>
+        <hr>
+        <!-- Breadcrumb End  -->
+
+        <!-- Main content container for width start -->
+        <div class="main-content-body-container">
+            <!-- Content body for indivisual pages start -->
+            <div class="main-content-body">
+                <h1>Details of XXX</h1>
+                <div class="product-details flex-jus-center">
+                    <div class="left-half">
+                        <div class="side-photo-bar">
+                            <div class="img-box">
+                                <img class="preview-photos" src="https://images.unsplash.com/photo-1528795259021-d8c86e14354c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+                                alt="">
+                            </div>
+                            <div class="img-box">
+                                <img class="preview-photos" src="https://images.unsplash.com/photo-1546027658-7aa750153465?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="">
+                            </div>
+                            <div class="img-box">
+                                <img class="preview-photos" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=329&q=80"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="main-photo">
+                            <div class="img-box" >
+                                <img id="main-photo-selector" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-half">
+                        <h1>Name</h1>
+                        <p>10 Sales</p>
+                        <p>12000 TK</p>
+                        <hr>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus nihil nesciunt quo rem amet veritatis ut enim aliquid, atque quae cumque nemo laboriosam tempora explicabo adipisci nobis voluptatem molestias illum autem? Harum quod, nam est ullam ex ipsa! Dolorum officia in sit. Debitis reprehenderit perspiciatis nihil. Ab ullam commodi officia delectus id optio nam sunt harum eveniet ex alias aut quam dolorem nihil pariatur quos aspernatur itaque, est ratione officiis, architecto explicabo facere voluptas? Odit ab expedita sapiente dolores mollitia optio neque adipisci dolor aut eveniet eius nihil debitis obcaecati magnam tempora dicta eos, delectus saepe amet sunt quaerat iure?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Content body for indivisual pages end -->
+        </div>
+        <!-- Main content container for width end -->
+
+        <!-- Footer Start  -->
+        <footer>
+            <p>Designed and built for <a href="">Rupali Plaza</a>, by <a href="">@shz</a>.</p>
+        </footer>
+        <!-- Footer End  -->
+    </div>
+    <!-- Added Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
+    <script>
+        if(document.querySelector(".preview-photos") != null)
+        {
+            let prev_photos = document.querySelectorAll(".preview-photos");
+            let initial_photo = prev_photos[0].getAttribute("src");
+            let main_photo = document.getElementById("main-photo-selector").setAttribute("src" , initial_photo);
+            prev_photos.forEach(e =>{
+                e.addEventListener("click", ev => {
+                    document.getElementById("main-photo-selector").setAttribute("src" , e.getAttribute("src"));
+                })
+            })
+        }
+    </script>
+</body>
+
+</html>

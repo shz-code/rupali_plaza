@@ -1,6 +1,6 @@
 :root {
-  --primary-color: blue;
-  --secondary-color: red;
+  --primary-color: #3ab4f2;
+  --secondary-color: #0078aa;
   --primary-text: black;
   --secondary-text: white;
   --primary-bg: #f0f1f1;
@@ -73,6 +73,93 @@ body {
         max-width: 250px;
         width: 100%;
         margin: 1%;
+      }
+    }
+  }
+}
+
+.main-content-body-container {
+  width: 100%;
+  padding: 0 1%;
+  .product-details {
+    flex-wrap: nowrap;
+    .img-box {
+      // Initial
+      padding: 3%;
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        object-fit: contain;
+        padding: 3%;
+        border: 2px solid var(--primary-color);
+        border-image: linear-gradient(
+          var(--primary-color),
+          var(--secondary-color),
+          var(--primary-color)
+        );
+        border-image-slice: 1;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.13);
+      }
+    }
+    .left-half {
+      display: flex;
+      align-items: center;
+      .side-photo-bar {
+        .img-box {
+          max-width: 200px;
+          width: 100%;
+          height: 200px;
+          margin: 3% 0;
+        }
+      }
+      .main-photo {
+        .img-box {
+          width: 500px;
+          // width: 100%;
+          height: 500px;
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      .left-half {
+        display: block;
+        .side-photo-bar {
+          margin: 0 0;
+          display: flex;
+          .img-box{
+            max-width: 100%;
+          }
+        }
+        .main-photo .img-box {
+          width: 100%;
+        }
+      }
+    }
+    .right-half {
+      flex: 30%;
+      h1 {
+        text-align: left;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .product-details {
+      padding: 3%;
+      flex-wrap: wrap;
+      .img-box {
+        padding: 0%;
+      }
+      .left-half {
+        .img-box {
+          padding: 1.5%;
+        }
+      }
+      .right-half {
+        margin-left: 0px;
       }
     }
   }
