@@ -135,7 +135,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                     <li class="breadcrumb-item"><a href="products_all.html">Products</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Details</li>
+                    <li class="breadcrumb-item active" aria-current="page">Add new product</li>
                 </ol>
             </nav>
         </div>
@@ -146,39 +146,17 @@
         <div class="main-content-body-container">
             <!-- Content body for indivisual pages start -->
             <div class="main-content-body">
-                <h1>Details of XXX</h1>
-                <div class="product-details flex-jus-center">
-                    <div class="left-half">
-                        <div class="side-photo-bar">
-                            <div class="img-box">
-                                <img class="preview-photos" src="https://images.unsplash.com/photo-1528795259021-d8c86e14354c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
-                                alt="">
-                            </div>
-                            <div class="img-box">
-                                <img class="preview-photos" src="https://images.unsplash.com/photo-1546027658-7aa750153465?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                alt="">
-                            </div>
-                            <div class="img-box">
-                                <img class="preview-photos" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=329&q=80"
-                                    alt="">
-                            </div>
+                <h1>Product Entry</h1>
+                <div class="product-entry">
+                    <form action="" class="flex-jus-center">
+                        <div class="left-half">
+                            <label for="file-upload">Upload Files</label>
+                            <input type="file" id="file-upload">
                         </div>
-                        <div class="main-photo">
-                            <div class="img-box" >
-                                <img id="main-photo-selector" src="" alt="">
-                            </div>
+                        <div class="right-half">
+                            Entry
                         </div>
-                    </div>
-                    <div class="right-half">
-                        <h1>Name</h1>
-                        <p>10 Sales</p>
-                        <p>12000 TK</p>
-                        <hr>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus nihil nesciunt quo rem amet veritatis ut enim aliquid, atque quae cumque nemo laboriosam tempora explicabo adipisci nobis voluptatem molestias illum autem? Harum quod, nam est ullam ex ipsa! Dolorum officia in sit. Debitis reprehenderit perspiciatis nihil. Ab ullam commodi officia delectus id optio nam sunt harum eveniet ex alias aut quam dolorem nihil pariatur quos aspernatur itaque, est ratione officiis, architecto explicabo facere voluptas? Odit ab expedita sapiente dolores mollitia optio neque adipisci dolor aut eveniet eius nihil debitis obcaecati magnam tempora dicta eos, delectus saepe amet sunt quaerat iure?</p>
-                        <hr>
-                        <p>FTH-105</p>
-                        <p>3 pcs</p>
-                    </div>
+                    </form>
                 </div>
             </div>
             <!-- Content body for indivisual pages end -->
@@ -196,19 +174,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
-    <script>
-        if(document.querySelector(".preview-photos") != null)
-        {
-            let prev_photos = document.querySelectorAll(".preview-photos");
-            let initial_photo = prev_photos[0].getAttribute("src");
-            let main_photo = document.getElementById("main-photo-selector").setAttribute("src" , initial_photo);
-            prev_photos.forEach(e =>{
-                e.addEventListener("click", ev => {
-                    document.getElementById("main-photo-selector").setAttribute("src" , e.getAttribute("src"));
-                })
-            })
-        }
-    </script>
 </body>
 
 </html>

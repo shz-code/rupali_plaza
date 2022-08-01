@@ -137,7 +137,8 @@ body {
       }
     }
     .right-half {
-      flex: 30%;
+      width: 30%;
+      margin-left: 50px;
       h1 {
         text-align: left;
       }
@@ -159,7 +160,38 @@ body {
         }
       }
       .right-half {
+        width: 100%;
         margin-left: 0px;
+      }
+    }
+  }
+}
+
+.main-content-body-container {
+  width: 80%;
+  padding: 0 0;
+  .product-entry{
+    form{
+      max-width: 100%;
+      padding: 0px;
+      flex-wrap: nowrap;
+      .left-half{
+        height: 500px;
+        // flex: 20%;
+        label{
+          height: 100%;
+          width: 100%;
+          border: 2px solid var(--secondary-color);
+        }
+        #file-upload{
+          visibility: hidden;
+          &::-webkit-file-upload-button {
+            visibility: hidden;
+          }
+        }
+      }
+      .right-half{
+        flex: 80%;
       }
     }
   }
