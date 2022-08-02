@@ -127,7 +127,7 @@ body {
         .side-photo-bar {
           margin: 0 0;
           display: flex;
-          .img-box{
+          .img-box {
             max-width: 100%;
           }
         }
@@ -170,28 +170,93 @@ body {
 .main-content-body-container {
   width: 80%;
   padding: 0 0;
-  .product-entry{
-    form{
+  .product-entry {
+    form {
       max-width: 100%;
       padding: 0px;
       flex-wrap: nowrap;
-      .left-half{
-        height: 500px;
-        // flex: 20%;
-        label{
-          height: 100%;
-          width: 100%;
+      .left-half {
+        // height: 500px;
+        flex: 30%;
+        &.drag-area {
           border: 2px solid var(--secondary-color);
-        }
-        #file-upload{
-          visibility: hidden;
-          &::-webkit-file-upload-button {
-            visibility: hidden;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          &.active {
+            border: 2px solid rgb(250, 0, 0);
+          }
+          .icon {
+            font-size: 2rem;
+            // color: #fff;
+          }
+          header{
+            font-size: 1.5rem;
+            font-weight: 500;
+            // color: #fff;
+          }
+          span{
+            font-size: 1rem;
+            font-weight: 500;
+            // color: #fff;
+            margin: 20px 0 10px;
+          }
+          button{
+            padding: 10px 25px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            background: #fff;
+            color: #5256ad;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          img{
+            height: 100%;
+            width: 100%;
+            //object-fit: cover;
+            border-radius: 5px;
           }
         }
       }
-      .right-half{
+      .right-half {
         flex: 80%;
+        border: 2px solid gray;
+        padding: 1%;
+        .custom-row {
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          .form-floating {
+            margin: 0;
+            width: 49%;
+          }
+          .form-select {
+            width: 49%;
+          }
+        }
+      }
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column-reverse;
+        .right-half {
+          .custom-row {
+            display: block;
+            .form-floating {
+              margin-bottom: 10px;
+              width: 100%;
+              .form-control {
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+              }
+            }
+            .form-select {
+              width: 100%;
+              padding: 12px;
+            }
+          }
+        }
       }
     }
   }
