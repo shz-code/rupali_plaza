@@ -195,4 +195,8 @@ footer p {
      border-image: linear-gradient(var(--primary-color), var(--secondary-color), var(--primary-color));
   border-image-slice: 1;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.13);
+}
+
+.btn {
+  background: var(--secondary-color);
 }/*# sourceMappingURL=utilities.css.map */

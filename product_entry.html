@@ -40,7 +40,6 @@
 
     <div class="sticky-container">
       <!--  Sticky Container -->
-
       <!-- Main navigation start  -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -211,76 +210,118 @@
         </div>
       </nav>
       <!-- Main navigation End  -->
+    </div>
 
-      <!-- Breadcrumb Start  -->
-      <div class="breadcrumb-container">
-        <nav style="--bs-breadcrumb-divider: '->'" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-            <li class="breadcrumb-item">
-              <a href="products_all.html">Products</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Add new product
-            </li>
-          </ol>
-        </nav>
-      </div>
-      <hr />
-      <!-- Breadcrumb End  -->
+    <!-- Breadcrumb Start  -->
+    <div class="breadcrumb-container">
+      <nav style="--bs-breadcrumb-divider: '->'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item">
+            <a href="products_all.html">Products</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Add new product
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <hr />
+    <!-- Breadcrumb End  -->
 
-      <!-- Main content container for width start -->
-      <div class="main-content-body-container">
-        <!-- Content body for indivisual pages start -->
-        <div class="main-content-body">
-          <h1>Product Entry</h1>
-          <div class="product-entry">
-            <form id="product-entry-form" action="" class="flex-jus-center border-design">
-              <div class="left-half drag-area">
-                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                <header class="drag-header">Drag & Drop to Upload Files</header>
-                <span class="drag-or">OR</span>
-                <button class="drag-btn btn">Browse Files</button>
-                <div class="drag-img"></div>
-                <input type="file" id="file-input" multiple hidden />
+    <!-- Main content container for width start -->
+    <div class="main-content-body-container">
+      <!-- Content body for indivisual pages start -->
+      <div class="main-content-body">
+        <h1>Product Entry</h1>
+        <div class="product-entry">
+          <form
+            id="product-entry-form"
+            action=""
+            class="flex-jus-center border-design"
+          >
+            <div class="left-half drag-area">
+              <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+              <header class="drag-header">Drag & Drop to Upload Images</header>
+              <span class="drag-or">OR</span>
+              <button class="drag-btn btn btn-primary">Browse Images</button>
+              <div class="drag-img"></div>
+              <input type="file" id="file-input" multiple hidden />
+            </div>
+            <div class="right-half">
+              <div class="flex-jus-center custom-row">
+                <div class="form-floating input-field-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    id="name"
+                  />
+                  <label for="name">Name</label>
+                </div>
+                <select
+                  class="form-select input-field-2"
+                  name="product_type"
+                  aria-label="Select"
+                >
+                  <option selected disabled>Select Product-type</option>
+                  <option value="1">TV</option>
+                  <option value="2">Mobile</option>
+                  <optgroup label="Create New Product-Type">
+                    <option id="selected-option" value="new">Goto Link</option>
+                  </optgroup>
+                </select>
               </div>
-              <div class="right-half">
-                <div class="flex-jus-center custom-row">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="name@example.com"
-                    />
-                    <label for="">Email address</label>
-                  </div>
-                  <select
-                    class="form-select"
-                    name="product_type"
-                    aria-label="Select"
-                  >
-                    <option selected disabled>Select Product-type</option>
-                    <option value="1">TV</option>
-                    <option value="2">Mobile</option>
-                  </select>
+              <div class="flex-jus-center custom-row">
+                <div class="form-floating input-field-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Model"
+                    id="model"
+                    value="EASDSFEWSDW!@@"
+                    disabled
+                  />
+                  <label for="model">Model Number</label>
+                </div>
+                <div class="form-floating input-field-2">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Model"
+                    id="quantity"
+                  />
+                  <label for="quantity">Quantity</label>
                 </div>
               </div>
-            </form>
-          </div>
+               <div class="flex-jus-center custom-row">
+                <div class="form-floating input-field-3">
+                  <textarea 
+                  class="form-control" 
+                  placeholder="Write a description" 
+                  id="desc" 
+                  style="height: 150px"
+                  ></textarea>
+                  <label for="desc">Description</label>
+                </div>
+              </div>
+              <button class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <!-- Content body for indivisual pages end -->
       </div>
-      <!-- Main content container for width end -->
-
-      <!-- Footer Start  -->
-      <footer>
-        <p>
-          Designed and built for <a href="">Rupali Plaza</a>, by
-          <a href="">@shz</a>.
-        </p>
-      </footer>
-      <!-- Footer End  -->
+      <!-- Content body for indivisual pages end -->
     </div>
+    <!-- Main content container for width end -->
+
+    <!-- Footer Start  -->
+    <footer>
+      <p>
+        Designed and built for <a href="">Rupali Plaza</a>, by
+        <a href="">@shz</a>.
+      </p>
+    </footer>
+    <!-- Footer End  -->
+
     <!-- Added Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -289,21 +330,23 @@
     ></script>
     <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
     <script>
+
+      // File UPLOAD ===========================================>>>>>>>>
       let dragArea = document.querySelector(".drag-area"),
-        entryForm = document.getElementById("product-entry-form");
+      entryForm = document.getElementById("product-entry-form"),
         dragHeader = document.querySelector(".drag-header"),
         dragOr = document.querySelector(".drag-or"),
         dragImg = document.querySelector(".drag-img"),
         dragInput = document.getElementById("file-input"),
         dragBtn = document.querySelector(".drag-btn");
-
-      let filelist, file;
-
-      dragBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+        
+        let filelist, file;
+        
+        dragBtn.addEventListener("click", (e) => {
+          e.preventDefault();
         dragInput.click();
       });
-
+      
       dragInput.addEventListener("change", function () {
         filelist = this.files;
         entryForm.classList.add("active");
@@ -314,20 +357,20 @@
             file = filelist[i];
             showFile(); //calling function
           }
-          dragHeader.innerHTML = `${filelist.length} File(s) Added`;
+          dragHeader.innerHTML = `${filelist.length} Image(s) Added`;
           dragOr.innerHTML = "";
-          dragBtn.innerHTML="Browse More Files"
+          dragBtn.innerHTML = "Browse More Images";
         }
       });
-
+      
       dragArea.addEventListener("dragover", (event) => {
         event.preventDefault(); //preventing from default behaviour
         entryForm.classList.add("active");
-        dragHeader.innerHTML = "Release to Upload File";
+        dragHeader.innerHTML = "Release to Upload Images";
       });
       dragArea.addEventListener("dragleave", () => {
         entryForm.classList.remove("active");
-        dragHeader.innerHTML = "Drag & Drop to Upload Files";
+        dragHeader.innerHTML = "Drag & Drop to Upload Images";
       });
       //If user drop File on dragArea
       dragArea.addEventListener("drop", (event) => {
@@ -340,9 +383,9 @@
             file = filelist[i];
             showFile(); //calling function
           }
-          dragHeader.innerHTML = `${filelist.length} File(s) Added`;
+          dragHeader.innerHTML = `${filelist.length} Image(s) Added`;
           dragOr.innerHTML = "";
-          dragBtn.innerHTML="Browse More Files"
+          dragBtn.innerHTML = "Browse More Images";
         }
       });
       function showFile() {
@@ -351,6 +394,7 @@
         if (validExtensions.includes(fileType)) {
           //if user selected file is an image file
           let fileReader = new FileReader(); //creating new FileReader object
+          fileReader.readAsDataURL(file);
           fileReader.onload = () => {
             let fileURL = fileReader.result; //passing user file source in fileURL variable
             let divTag = document.createElement("div");
@@ -367,19 +411,31 @@
             divTag.append(spanTag);
             dragImg.append(divTag); //adding that created img tag inside dragArea container
           };
-          fileReader.readAsDataURL(file);
         } else {
           alert("This is not an Image File!");
           dragArea.classList.remove("active");
           dragHeader.textContent = "Drag & Drop to Upload File";
         }
       }
-      function removeImg(){
+      function removeImg() {
         let targetId = event.target.getAttribute("data-target");
         let targetImg = document.getElementById(targetId);
         targetImg.parentNode.remove();
-        
       }
+      // File UPLOAD ===========================================>>>>>>>>
+    </script>
+    <script>
+      let productType = document.querySelector(".form-select");
+      let selectedOption = document.getElementById("selected-option");
+      productType.addEventListener("change", (e)=>{
+        if(e.target.value === "new")
+        {
+          window.open('http://stackoverflow.com', '_blank');
+          selectedOption.value = "";
+          selectedOption.innerHTML = "Reload The page to view change";
+        }
+      })
     </script>
   </body>
-</html>
+  </html>
+  
