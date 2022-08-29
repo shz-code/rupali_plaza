@@ -62,6 +62,7 @@ h1,h5 {
   // Sticky Container
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 // Header
 header {

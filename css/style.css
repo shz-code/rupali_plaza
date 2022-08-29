@@ -7,10 +7,6 @@
   --secondary-bg: #f8f9fa;
 }
 
-body {
-  height: 100vh;
-}
-
 .main-content-body .form-signin,
 .main-content-body .signup-form {
   display: flex;
