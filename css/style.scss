@@ -175,56 +175,91 @@ body {
       max-width: 100%;
       padding: 0px;
       flex-wrap: nowrap;
+      &.active {
+        border: 2px solid var(red);
+        border-image: linear-gradient(red, green, red);
+        border-image-slice: 1;
+      }
       .left-half {
         // height: 500px;
         flex: 30%;
         &.drag-area {
-          border: 2px solid var(--secondary-color);
-          border-radius: 5px;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          &.active {
-            border: 2px solid rgb(250, 0, 0);
-          }
           .icon {
             font-size: 2rem;
             // color: #fff;
           }
-          header{
+          header {
             font-size: 1.5rem;
             font-weight: 500;
             // color: #fff;
           }
-          span{
+          span {
             font-size: 1rem;
             font-weight: 500;
             // color: #fff;
             margin: 20px 0 10px;
           }
-          button{
-            padding: 10px 25px;
-            font-size: 1.5rem;
+          button {
+            padding: 7px 15px;
+            font-size: 1.2rem;
             font-weight: 500;
-            border: none;
+            border: 1px solid var(--secondary-color);
             outline: none;
-            background: #fff;
-            color: #5256ad;
+            background: var(--secondary-color);
+            color: var(--secondary-text);
             border-radius: 5px;
             cursor: pointer;
           }
-          img{
-            height: 100%;
+          .drag-img {
             width: 100%;
-            //object-fit: cover;
-            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+            div {
+              position: relative;
+              img {
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin: 5px;
+                transition: 0.3s ease;
+                &:hover {
+                  opacity: 0.7;
+                }
+              }
+              span {
+                background: rgb(0, 0, 0);
+                height: 25px;
+                width: 25px;
+                position: absolute;
+                top: -10px;
+                right: 10px;
+                border-radius: 50px;
+                cursor: pointer;
+                &::before {
+                  content: "x";
+                  position: absolute;
+                  font-size: 0.8rem;
+                  top: 1px;
+                  left: 5px;
+                  height: 2px;
+                  width: 60%;
+                  color: white;
+                }
+              }
+            }
           }
         }
       }
       .right-half {
         flex: 80%;
-        border: 2px solid gray;
+        border-left: 2px solid gray;
         padding: 1%;
         .custom-row {
           justify-content: space-between;

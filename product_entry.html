@@ -1,247 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- Added Libraries -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Added Stylesheets -->
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Header logo part start -->
     <header>
-        <div class="logo-box">
-            <img src="https://www.logodesign.net/logo/sea-waves-with-penguins-6075ld.png" alt="Logo">
-            <!-- <img src="logo.png" alt="logo"> -->
-        </div>
+      <div class="logo-box">
+        <img
+          src="https://www.logodesign.net/logo/sea-waves-with-penguins-6075ld.png"
+          alt="Logo"
+        />
+        <!-- <img src="logo.png" alt="logo"> -->
+      </div>
     </header>
     <!-- Header logo part end  -->
 
     <div class="sticky-container">
-        <!--  Sticky Container -->
+      <!--  Sticky Container -->
 
-        <!-- Main navigation start  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home" aria-current="page" href="#">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="agents" href="#">Agents</a>
-                        </li>
-                        <!-- Dropdown Navigation Start   -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="products" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Products
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-                                <a class="dropdown-item" href="#">Brands</a>
-                                <div class="dropdown-divider"></div>
-                                <!-- Multilevel Dropdown Start  -->
-                                <div class="dropdown dropend">
-                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rupali</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                        <!-- Multi multilevel Dropdown Start  -->
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">TV</a>
-                                            <!-- Multi multi multilevel Dropdown Start  -->
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Model X</a>
-                                                <a class="dropdown-item" href="#">Model Y</a>
-                                            </div>
-                                            <!-- Multi multi multilevel Dropdown End  -->
-                                            <a class="dropdown-item" href="#">Mobile</a>
-                                        </div>
-                                        <!-- Multi multilevel Dropdown End  -->
-                                    </div>
-                                </div>
-                                <!-- Multilevel Dropdown End  -->
-                                <!-- Multilevel Dropdown Start  -->
-                                <div class="dropdown dropend">
-                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SAMSUNG</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">TV</a>
-                                            <!-- Multi multilevel Dropdown Start  -->
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Model Z</a>
-                                                <a class="dropdown-item" href="#">Model A</a>
-                                            </div>
-                                            <!-- Multi multilevel Dropdown End  -->
-                                        </div>
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Mobile</a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <!-- Multi multilevel Dropdown Start  -->
-                                                <div class="dropdown dropend">
-                                                    <a class="dropdown-item dropdown-toggle" href="#"
-                                                        id="dropdown-layouts" data-bs-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">A Series</a>
-                                                    <!-- Multi multi multilevel Dropdown Start  -->
-                                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                        <a class="dropdown-item" href="#">A3</a>
-                                                        <a class="dropdown-item" href="#">A71</a>
-                                                    </div>
-                                                    <!-- Multi multi multilevel Dropdown End  -->
-                                                </div>
-                                                <!-- Multi multilevel Dropdown Start  -->
-
-                                                <a class="dropdown-item" href="#">Note Series</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Multilevel Dropdown End  -->
+      <!-- Main navigation start  -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home"
+                  aria-current="page"
+                  href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="agents" href="#">Agents</a>
+              </li>
+              <!-- Dropdown Navigation Start   -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="products"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Brands</a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Multilevel Dropdown Start  -->
+                  <div class="dropdown dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="dropdown-layouts"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Rupali</a
+                    >
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdown-layouts"
+                    >
+                      <!-- Multi multilevel Dropdown Start  -->
+                      <div class="dropdown dropend">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          id="dropdown-layouts"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >TV</a
+                        >
+                        <!-- Multi multi multilevel Dropdown Start  -->
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdown-layouts"
+                        >
+                          <a class="dropdown-item" href="#">Model X</a>
+                          <a class="dropdown-item" href="#">Model Y</a>
+                        </div>
+                        <!-- Multi multi multilevel Dropdown End  -->
+                        <a class="dropdown-item" href="#">Mobile</a>
+                      </div>
+                      <!-- Multi multilevel Dropdown End  -->
+                    </div>
+                  </div>
+                  <!-- Multilevel Dropdown End  -->
+                  <!-- Multilevel Dropdown Start  -->
+                  <div class="dropdown dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="dropdown-layouts"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >SAMSUNG</a
+                    >
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdown-layouts"
+                    >
+                      <div class="dropdown dropend">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          id="dropdown-layouts"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >TV</a
+                        >
+                        <!-- Multi multilevel Dropdown Start  -->
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdown-layouts"
+                        >
+                          <a class="dropdown-item" href="#">Model Z</a>
+                          <a class="dropdown-item" href="#">Model A</a>
+                        </div>
+                        <!-- Multi multilevel Dropdown End  -->
+                      </div>
+                      <div class="dropdown dropend">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          id="dropdown-layouts"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Mobile</a
+                        >
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdown-layouts"
+                        >
+                          <!-- Multi multilevel Dropdown Start  -->
+                          <div class="dropdown dropend">
+                            <a
+                              class="dropdown-item dropdown-toggle"
+                              href="#"
+                              id="dropdown-layouts"
+                              data-bs-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              >A Series</a
+                            >
+                            <!-- Multi multi multilevel Dropdown Start  -->
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdown-layouts"
+                            >
+                              <a class="dropdown-item" href="#">A3</a>
+                              <a class="dropdown-item" href="#">A71</a>
                             </div>
-                        </li>
-                        <!-- Dropdown Navigation End   -->
-                    </ul>
+                            <!-- Multi multi multilevel Dropdown End  -->
+                          </div>
+                          <!-- Multi multilevel Dropdown Start  -->
+
+                          <a class="dropdown-item" href="#">Note Series</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Multilevel Dropdown End  -->
                 </div>
-            </div>
+              </li>
+              <!-- Dropdown Navigation End   -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Main navigation End  -->
+
+      <!-- Breadcrumb Start  -->
+      <div class="breadcrumb-container">
+        <nav style="--bs-breadcrumb-divider: '->'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item">
+              <a href="products_all.html">Products</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Add new product
+            </li>
+          </ol>
         </nav>
-        <!-- Main navigation End  -->
+      </div>
+      <hr />
+      <!-- Breadcrumb End  -->
 
-        <!-- Breadcrumb Start  -->
-        <div class="breadcrumb-container">
-            <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item"><a href="products_all.html">Products</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Add new product</li>
-                </ol>
-            </nav>
-        </div>
-        <hr>
-        <!-- Breadcrumb End  -->
-
-        <!-- Main content container for width start -->
-        <div class="main-content-body-container">
-            <!-- Content body for indivisual pages start -->
-            <div class="main-content-body">
-                <h1>Product Entry</h1>
-                <div class="product-entry">
-                    <form action="" class="flex-jus-center">
-                        <div class="left-half drag-area">
-                            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                            <header class="drag-header">Drag & Drop to Upload File</header>
-                            <span>OR</span>
-                            <button class="drag-btn">Browse File</button>
-                            <input type="file" id="file-input" hidden>
-                        </div>
-                        <div class="right-half">
-                            <div class="flex-jus-center custom-row">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" placeholder="name@example.com">
-                                    <label for="">Email address</label>
-                                </div>
-                                <select class="form-select" name="product_type" aria-label="Select">
-                                    <option selected disabled>Select Product-type</option>
-                                    <option value="1">TV</option>
-                                    <option value="2">Mobile</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
+      <!-- Main content container for width start -->
+      <div class="main-content-body-container">
+        <!-- Content body for indivisual pages start -->
+        <div class="main-content-body">
+          <h1>Product Entry</h1>
+          <div class="product-entry">
+            <form id="product-entry-form" action="" class="flex-jus-center border-design">
+              <div class="left-half drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <header class="drag-header">Drag & Drop to Upload Files</header>
+                <span class="drag-or">OR</span>
+                <button class="drag-btn btn">Browse Files</button>
+                <div class="drag-img"></div>
+                <input type="file" id="file-input" multiple hidden />
+              </div>
+              <div class="right-half">
+                <div class="flex-jus-center custom-row">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="name@example.com"
+                    />
+                    <label for="">Email address</label>
+                  </div>
+                  <select
+                    class="form-select"
+                    name="product_type"
+                    aria-label="Select"
+                  >
+                    <option selected disabled>Select Product-type</option>
+                    <option value="1">TV</option>
+                    <option value="2">Mobile</option>
+                  </select>
                 </div>
-            </div>
-            <!-- Content body for indivisual pages end -->
+              </div>
+            </form>
+          </div>
         </div>
-        <!-- Main content container for width end -->
+        <!-- Content body for indivisual pages end -->
+      </div>
+      <!-- Main content container for width end -->
 
-        <!-- Footer Start  -->
-        <footer>
-            <p>Designed and built for <a href="">Rupali Plaza</a>, by <a href="">@shz</a>.</p>
-        </footer>
-        <!-- Footer End  -->
+      <!-- Footer Start  -->
+      <footer>
+        <p>
+          Designed and built for <a href="">Rupali Plaza</a>, by
+          <a href="">@shz</a>.
+        </p>
+      </footer>
+      <!-- Footer End  -->
     </div>
     <!-- Added Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
     <script>
-        let dropArea  = document.querySelector(".drag-area"),
-            dragHeader = document.querySelector(".drag-header"),
-            dragInput = document.getElementById("file-input"),
-            dragBtn = document.querySelector(".drag-btn");
+      let dragArea = document.querySelector(".drag-area"),
+        entryForm = document.getElementById("product-entry-form");
+        dragHeader = document.querySelector(".drag-header"),
+        dragOr = document.querySelector(".drag-or"),
+        dragImg = document.querySelector(".drag-img"),
+        dragInput = document.getElementById("file-input"),
+        dragBtn = document.querySelector(".drag-btn");
 
-            var file;
+      let filelist, file;
 
-        dragBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            dragInput.click();
-        });
+      dragBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        dragInput.click();
+      });
 
-        dragInput.addEventListener("change", function () {
-            file = this.files[0];
-            console.log(file);
-            dropArea.classList.add("active");
+      dragInput.addEventListener("change", function () {
+        filelist = this.files;
+        entryForm.classList.add("active");
+        if (filelist.length > 3) {
+          alert("Too many Files. Select 3 Files Atmost.");
+        } else {
+          for (i = 0; i < filelist.length; i++) {
+            file = filelist[i];
             showFile(); //calling function
-        });
-
-        dropArea.addEventListener("dragover", (event) => {
-            event.preventDefault(); //preventing from default behaviour
-            dropArea.classList.add("active");
-            dragHeader.textContent = "Release to Upload File";
-        });
-        dropArea.addEventListener("dragleave", () => {
-            dropArea.classList.remove("active");
-            dragHeader.textContent = "Drag & Drop to Upload File";
-        });
-        //If user drop File on DropArea
-        dropArea.addEventListener("drop", (event) => {
-            event.preventDefault(); //preventing from default behaviour
-            //getting user select file and [0] this means if user select multiple files then we'll select only the first one
-            file = event.dataTransfer.files[0];
-            showFile(); //calling function
-        });
-        function showFile() {
-            let fileType = file.type; //getting selected file type
-            let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //adding some valid image extensions in array
-            if (validExtensions.includes(fileType)) { //if user selected file is an image file
-                let fileReader = new FileReader(); //creating new FileReader object
-                fileReader.onload = () => {
-                    let fileURL = fileReader.result; //passing user file source in fileURL variable
-                    // UNCOMMENT THIS BELOW LINE. I GOT AN ERROR WHILE UPLOADING THIS POST SO I COMMENTED IT
-                    let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
-                    dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
-                }
-                fileReader.readAsDataURL(file);
-            } else {
-                alert("This is not an Image File!");
-                dropArea.classList.remove("active");
-                dragHeader.textContent = "Drag & Drop to Upload File";
-            }
+          }
+          dragHeader.innerHTML = `${filelist.length} File(s) Added`;
+          dragOr.innerHTML = "";
+          dragBtn.innerHTML="Browse More Files"
         }
-    </script>
-</body>
+      });
 
+      dragArea.addEventListener("dragover", (event) => {
+        event.preventDefault(); //preventing from default behaviour
+        entryForm.classList.add("active");
+        dragHeader.innerHTML = "Release to Upload File";
+      });
+      dragArea.addEventListener("dragleave", () => {
+        entryForm.classList.remove("active");
+        dragHeader.innerHTML = "Drag & Drop to Upload Files";
+      });
+      //If user drop File on dragArea
+      dragArea.addEventListener("drop", (event) => {
+        event.preventDefault(); //preventing from default behaviour
+        filelist = event.dataTransfer.files;
+        if (filelist.length > 3) {
+          alert("Too many Files. Select 3 Files Atmost.");
+        } else {
+          for (i = 0; i < filelist.length; i++) {
+            file = filelist[i];
+            showFile(); //calling function
+          }
+          dragHeader.innerHTML = `${filelist.length} File(s) Added`;
+          dragOr.innerHTML = "";
+          dragBtn.innerHTML="Browse More Files"
+        }
+      });
+      function showFile() {
+        let fileType = file.type; //getting selected file type
+        let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //adding some valid image extensions in array
+        if (validExtensions.includes(fileType)) {
+          //if user selected file is an image file
+          let fileReader = new FileReader(); //creating new FileReader object
+          fileReader.onload = () => {
+            let fileURL = fileReader.result; //passing user file source in fileURL variable
+            let divTag = document.createElement("div");
+            let imgTag = document.createElement("img");
+            let spanTag = document.createElement("span");
+            imgTag.setAttribute("src", fileURL); //creating an img tag and passing user selected file source inside src attribute
+            let createRandomId = Math.random() * 100;
+            imgTag.setAttribute("id", createRandomId);
+            imgTag.setAttribute("draggable", "false");
+            spanTag.setAttribute("class", "remove-img");
+            spanTag.setAttribute("data-target", createRandomId);
+            spanTag.setAttribute("onclick", "removeImg()");
+            divTag.append(imgTag);
+            divTag.append(spanTag);
+            dragImg.append(divTag); //adding that created img tag inside dragArea container
+          };
+          fileReader.readAsDataURL(file);
+        } else {
+          alert("This is not an Image File!");
+          dragArea.classList.remove("active");
+          dragHeader.textContent = "Drag & Drop to Upload File";
+        }
+      }
+      function removeImg(){
+        let targetId = event.target.getAttribute("data-target");
+        let targetImg = document.getElementById(targetId);
+        targetImg.parentNode.remove();
+        
+      }
+    </script>
+  </body>
 </html>

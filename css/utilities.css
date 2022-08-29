@@ -186,4 +186,12 @@ footer p {
 
 .warning {
   color: red;
+}
+
+.border-design {
+  border: 2px solid var(--primary-color);
+  -o-border-image: linear-gradient(var(--primary-color), var(--secondary-color), var(--primary-color));
+     border-image: linear-gradient(var(--primary-color), var(--secondary-color), var(--primary-color));
+  border-image-slice: 1;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.13);
 }/*# sourceMappingURL=utilities.css.map */
