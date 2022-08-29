@@ -144,6 +144,19 @@
   width: 80%;
   padding: 0 0;
 }
+.main-content-body-container .alert-box {
+  text-align: center;
+}
+.main-content-body-container .alert-box h3 {
+  padding: 5px;
+  border-radius: 5px;
+}
+.main-content-body-container .alert-box h3.success {
+  background: green;
+}
+.main-content-body-container .alert-box h3.error {
+  background: red;
+}
 .main-content-body-container .product-entry form {
   max-width: 100%;
   padding: 0px;
@@ -202,8 +215,8 @@
   height: 25px;
   width: 25px;
   position: absolute;
-  top: -10px;
-  right: 10px;
+  top: -5px;
+  right: -5px;
   border-radius: 50px;
   cursor: pointer;
 }
