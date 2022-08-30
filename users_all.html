@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Added Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Added Stylesheets -->
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Header logo part start -->
+    <header>
+        <div class="logo-box">
+            <img src="https://www.logodesign.net/logo/sea-waves-with-penguins-6075ld.png" alt="Logo" />
+            <!-- <img src="logo.png" alt="logo"> -->
+        </div>
+    </header>
+    <!-- Header logo part end  -->
+
+    <div class="sticky-container">
+        <!--  Sticky Container -->
+
+        <!-- Main navigation start  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="agents" href="#">Agents</a>
+                        </li>
+                        <!-- Dropdown Navigation Start   -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="products" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Brands</a>
+                                <div class="dropdown-divider"></div>
+                                <!-- Multilevel Dropdown Start  -->
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rupali</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <!-- Multi multilevel Dropdown Start  -->
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">TV</a>
+                                            <!-- Multi multi multilevel Dropdown Start  -->
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Model X</a>
+                                                <a class="dropdown-item" href="#">Model Y</a>
+                                            </div>
+                                            <!-- Multi multi multilevel Dropdown End  -->
+                                            <a class="dropdown-item" href="#">Mobile</a>
+                                        </div>
+                                        <!-- Multi multilevel Dropdown End  -->
+                                    </div>
+                                </div>
+                                <!-- Multilevel Dropdown End  -->
+                                <!-- Multilevel Dropdown Start  -->
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SAMSUNG</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">TV</a>
+                                            <!-- Multi multilevel Dropdown Start  -->
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Model Z</a>
+                                                <a class="dropdown-item" href="#">Model A</a>
+                                            </div>
+                                            <!-- Multi multilevel Dropdown End  -->
+                                        </div>
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Mobile</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <!-- Multi multilevel Dropdown Start  -->
+                                                <div class="dropdown dropend">
+                                                    <a class="dropdown-item dropdown-toggle" href="#"
+                                                        id="dropdown-layouts" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">A Series</a>
+                                                    <!-- Multi multi multilevel Dropdown Start  -->
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                        <a class="dropdown-item" href="#">A3</a>
+                                                        <a class="dropdown-item" href="#">A71</a>
+                                                    </div>
+                                                    <!-- Multi multi multilevel Dropdown End  -->
+                                                </div>
+                                                <!-- Multi multilevel Dropdown Start  -->
+
+                                                <a class="dropdown-item" href="#">Note Series</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Multilevel Dropdown End  -->
+                            </div>
+                        </li>
+                        <!-- Dropdown Navigation End   -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main navigation End  -->
+    </div>
+
+    <!-- Breadcrumb Start  -->
+    <div class="breadcrumb-container">
+        <nav style="--bs-breadcrumb-divider: '->'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                <li class="breadcrumb-item active">
+                    Users
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <hr />
+    <!-- Breadcrumb End  -->
+
+    <!-- Main content container for width start -->
+    <div class="main-content-body-container">
+        <!-- Content body for indivisual pages start -->
+        <div class="main-content-body">
+            <h1>All Users</h1>
+            <div class="users_all">
+                <div class="users_role_toggle">
+                    <span data-role="all" class="toggle_all active toggle_btn">All Users</span>
+                    <span data-role="manager" class="toggle_managers toggle_btn">All Managers</span>
+                    <span data-role="agent" class="toggle_employee toggle_btn">All Employees</span>
+                </div>
+                <div class="users_card_container">
+                    <table class="user_card_table table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Number</th>
+                        </tr>
+                        <tr  data-role="manager" class="users">
+                            <td><a href="">Mofiz Rana</a></td>
+                            <td>mofa_rana</td>
+                            <td>018763281923</td>
+                        </tr>
+                        <tr data-role="agent" class="users">
+                            <td><a href="">kana Mamun</a></td>
+                            <td>mo_rana</td>
+                            <td>018763281923</td>
+                        </tr>
+                        <tr  data-role="agent" class="users">
+                            <td><a href="">Dhila Kaysar</a></td>
+                            <td>mofa_a</td>
+                            <td>018763281923</td>
+                        </tr>
+                        <tr  data-role="agent" class="users">
+                            <td><a href="">Dhila Kaysar</a></td>
+                            <td>mofa_a</td>
+                            <td>018763281923</td>
+                        </tr>
+                        <tr  data-role="agent" class="users">
+                            <td><a href="">Dhila Kaysar</a></td>
+                            <td>mofa_a</td>
+                            <td>018763281923</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Content body for indivisual pages end -->
+    </div>
+    <!-- Main content container for width end -->
+
+    <!-- Footer Start  -->
+    <footer>
+        <p>
+            Designed and built for <a href="">Rupali Plaza</a>, by
+            <a href="">@shz</a>.
+        </p>
+    </footer>
+    <!-- Footer End  -->
+
+    <!-- Added Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
+    <script>
+        let spanBtnCont = document.querySelector(".users_role_toggle"), 
+        spanBtn = document.querySelectorAll(".toggle_btn"),
+        users = document.querySelectorAll(".users");
+
+        spanBtn.forEach((item)=>{
+            item.addEventListener("click",(e)=>{
+                let role = item.getAttribute("data-role");
+                if(!e.target.classList.contains("active"))
+                {
+                    spanBtnCont.querySelector(".active").classList.remove("active");
+
+                    e.target.classList.add("active");
+
+                    users.forEach((user) => {
+                        let userRole = user.getAttribute("data-role");
+                        if(userRole === role || role == "all")
+                        {
+                            user.style.display = "table-row";
+                        }
+                        else{
+                            user.style.display = "none";
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

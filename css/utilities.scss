@@ -207,6 +207,27 @@ footer {
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.13);
 }
 
+.help-text{
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
 .btn{
   background: var(--secondary-color);
+}
+
+.alert-box{
+  text-align: center;
+  h3{
+    padding: 5px;
+    border-radius: 5px;
+    &.success{
+      background: green;
+    }
+    &.error{
+      background: red;
+    }
+  }
 }

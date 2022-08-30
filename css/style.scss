@@ -167,19 +167,6 @@
 .main-content-body-container {
   width: 80%;
   padding: 0 0;
-  .alert-box{
-    text-align: center;
-    h3{
-      padding: 5px;
-      border-radius: 5px;
-      &.success{
-        background: green;
-      }
-      &.error{
-        background: red;
-      }
-    }
-  }
   .product-entry {
     form {
       max-width: 100%;
@@ -294,6 +281,32 @@
           }
         }
       }
+    }
+  }
+}
+
+.users_all{
+  .users_role_toggle{
+    text-align: center;
+    span{
+      display: inline-block;
+      padding: 10px;
+      margin: 0 10px;
+      width: 150px;
+      background: var(--primary-color);
+      color: var(--secondary-text);
+      box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.13);
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: 0.3s ease;
+      &.active{
+        background: var(--secondary-color);
+      }
+      &:hover{
+        transform: scale(0.9);
+      }
+
     }
   }
 }
